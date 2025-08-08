@@ -53,7 +53,7 @@ sqlite3 'data.db' < 'data.sql'
 Run the application from your terminal:
 
 ```bash
-./sqlite-query-api -t clients
+./sqlite-query-api -d data.db -t clients
 ````
 
 This will start the server on `http://localhost:8080` and expose the `clients` table at `http://localhost:8080/clients`.
@@ -77,10 +77,10 @@ The application can be configured using command-line flags:
 
 ```bash
 # Start server for 'clients' table, sorted by 'name' descending, with a default limit of 20
-./sqlite-query-api -t clients -s name -o desc -l 20
+./sqlite-query-api -d data.db -t clients -s name -o desc -l 20
 
 # Start server for 'products' table, excluding 'id' and 'price'
-./sqlite-query-api --table products --exclude id,price
+./sqlite-query-api --db data.db --table products --exclude id,price
 ```
 
 -----
