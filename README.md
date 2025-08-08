@@ -121,7 +121,7 @@ This query would:
 
 ## 🚀 Deployment with Reverse Proxy
 
-For production environments, it's recommended to use a reverse proxy like Nginx or Apache to serve your application. This allows you to handle SSL/TLS, load balancing, and serve static files more efficiently.
+For production environments, it's recommended to use a reverse proxy like Nginx or Apache to serve your application. This allows you to handle SSL/TLS and  load balancing.
 
 ### Nginx Configuration Example
 
